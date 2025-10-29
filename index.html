@@ -17,7 +17,7 @@
     @keyframes fadeSlide { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
     .fadeSlide { animation: fadeSlide 0.7s ease forwards; opacity:0; }
     #loader { position: fixed; inset: 0; background: var(--assal); display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:60; }
-    #loader img { width:120px; height:120px; border-radius:50%; border:3px solid white; animation:spin 3s linear infinite; box-shadow:0 0 30px rgba(255,255,255,0.4); }
+    #loader img { width:120px; height:120px; border-radius:50%; border:3px solid white; animation:spin 3s linear infinite; box-shadow:0 0 30px rgba(255,255,255,0.4); object-fit:cover; }
     #loader h1 { margin-top:20px; font-size:32px; font-weight:700; letter-spacing:2px; color:white; }
     @keyframes spin { from {transform:rotate(0deg);} to {transform:rotate(360deg);} }
     #lang-screen { position: fixed; inset: 0; display: none; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.6); backdrop-filter: blur(12px); z-index: 50; }
